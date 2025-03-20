@@ -32,7 +32,6 @@ public class SampleJobApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		JobParametersBuilder jobParametersBuilder = new JobParametersBuilder();
-		jobParametersBuilder.addLong("runTime", System.currentTimeMillis());
 
 		Arrays.stream(args)
 				.forEach(arg -> {
